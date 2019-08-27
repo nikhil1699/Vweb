@@ -402,7 +402,17 @@
                     }
 
                 }); 
-            });           
+            });
+            function changeArrow() {
+
+                    if (document.getElementById("arrow").className == "fas fa-angle-down fa-2x") {
+                        document.getElementById("arrow").className = "fas fa-angle-up fa-2x";
+
+                    }
+                    else {
+                        document.getElementById("arrow").className = "fas fa-angle-down fa-2x";
+                    }
+                }           
         
         </script>
         <script src="js/jquery.min.js"></script>
