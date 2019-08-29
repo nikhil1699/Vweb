@@ -1,44 +1,4 @@
-/* =================================================================== 
- *
- *  Count v1.0 Main Stylesheet
- *  04-16-2018
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # base style overrides
- *    ## links
- *  # typography & general theme styles
- *    ## lists
- *    ## responsive video container
- *    ## floated image
- *    ## tables
- *    ## Spacing
- *    ## pace.js styles - minimal
- *  # preloader
- *  # forms
- *    ## style placeholder text
- *    ## change autocomplete styles in chrome
- *  # buttons
- *  # additional components
- *    ## additional typo styles
- *  # home
- *    ## home slides
- *    ## home particles 
- *    ## site logo
- *    ## home content
- *    ## home social
- *    ## home copyright
- *    ## home animations
- *  # info
- *    ## info toggle
- *
- * =================================================================== */
 
-
-/* ===================================================================
- * # base style overrides - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- */
 html {
   font-size: 10px;
 }
@@ -68,9 +28,6 @@ body {
   padding: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## links - (_document-setup.scss)
- * ------------------------------------------------------------------- */
 a {
   color: #ec008c;
   -webkit-transition: all 0.3s ease-in-out;
@@ -89,11 +46,6 @@ a:active {
 }
 
 
-
-/* ===================================================================
- * # typography & general theme styles - (_document-setup.scss)
- * 
- * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "domine-regular", serif;
   color: #000000;
@@ -323,9 +275,6 @@ hr {
   height: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## lists - (_document-setup.scss)
- * ------------------------------------------------------------------- */
 ol {
   list-style: decimal;
 }
@@ -383,9 +332,6 @@ dd {
   margin: 0 0 0 2rem;
 }
 
-/* ------------------------------------------------------------------- 
- * ## responsive video container - (_document-setup.scss)
- * ------------------------------------------------------------------- */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -404,9 +350,7 @@ dd {
   height: 100%;
 }
 
-/* ------------------------------------------------------------------- 
- * ## floated image - (_document-setup.scss)
- * ------------------------------------------------------------------- */
+
 img.pull-right {
   margin: 1.5rem 0 0 3rem;
 }
@@ -415,9 +359,7 @@ img.pull-left {
   margin: 1.5rem 3rem 0 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## tables - (_document-setup.scss)
- * ------------------------------------------------------------------- */
+
 table {
   border-width: 0;
   width: 100%;
@@ -455,10 +397,6 @@ td:last-child {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
-
-/* ------------------------------------------------------------------- 
- * ## Spacing - (_document-setup.scss)
- * ------------------------------------------------------------------- */
 button,
 .btn {
   margin-bottom: 1.2rem;
@@ -485,9 +423,7 @@ form,
   margin-bottom: 3rem;
 }
 
-/* ------------------------------------------------------------------- 
- * ## pace.js styles - minimal - (_document-setup.scss)
- * ------------------------------------------------------------------- */
+
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -516,10 +452,7 @@ form,
 
 
 
-/* ===================================================================
- * # preloader - (_preloader-line-scale-pulse-out.scss)
- *
- * ------------------------------------------------------------------- */
+
 #preloader {
   position: fixed;
   top: 0;
@@ -607,10 +540,7 @@ form,
 
 
 
-/* ===================================================================
- * # forms - (_forms.scss)
- *
- * ------------------------------------------------------------------- */
+
 fieldset {
   border: none;
 }
@@ -740,9 +670,7 @@ label > input[type="radio"] {
   top: .15rem;
 }
 
-/* ------------------------------------------------------------------- 
- * ## style placeholder text
- * ------------------------------------------------------------------- */
+
 ::-webkit-input-placeholder {
   color: #828282;
 }
@@ -782,11 +710,6 @@ select:-webkit-autofill:focus {
 
 
 
-
-/* ===================================================================
- * # buttons - (_button.scss)
- *
- * ------------------------------------------------------------------- */
 .btn,
 button,
 input[type="submit"],
@@ -828,8 +751,6 @@ input[type="button"]:focus {
   outline: 0;
 }
 
-/* button primary
- * ------------------------------------------------- */
 .btn.btn--primary,
 button.btn--primary,
 input[type="submit"].btn--primary,
@@ -854,8 +775,6 @@ input[type="button"].btn--primary:focus {
   border-color: #d3007d;
 }
 
-/* button modifiers
- * ------------------------------------------------- */
 .btn.full-width,
 button.full-width {
   width: 100%;
@@ -904,17 +823,6 @@ input::-moz-focus-inner {
 
 
 
-/* =================================================================== 
- * # additional components - (_others.scss)
- *
- * ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- 
- * ## additional typo styles - (_additional-typo.scss)
- * ------------------------------------------------------------------- */
-
-/* drop cap 
- * ----------------------------------------------- */
 .drop-cap:first-letter {
   float: left;
   margin: 0;
@@ -928,8 +836,7 @@ input::-moz-focus-inner {
   color: #000000;
 }
 
-/* line definition style 
- * ----------------------------------------------- */
+
 .lining dt,
 .lining dd {
   display: inline;
@@ -955,8 +862,6 @@ input::-moz-focus-inner {
   margin-left: -0.2em;
 }
 
-/* dictionary definition style 
- * ----------------------------------------------- */
 .dictionary-style dt {
   display: inline;
   counter-reset: definitions;
@@ -976,18 +881,7 @@ input::-moz-focus-inner {
   content: counter(definitions, decimal) ". ";
 }
 
-/** 
- * Pull Quotes
- * -----------
- * markup:
- *
- * <aside class="pull-quote">
- *    <blockquote>
- *      <p></p>
- *    </blockquote>
- *  </aside>
- *
- * --------------------------------------------------------------------- */
+
 .pull-quote {
   position: relative;
   padding: 2.1rem 3rem 2.1rem 0px;
@@ -1022,18 +916,7 @@ input::-moz-focus-inner {
   content: none;
 }
 
-/** 
- * Stats Tab
- * ---------
- * markup:
- *
- * <ul class="stats-tabs">
- *    <li><a href="#">[value]<em>[name]</em></a></li>
- *  </ul>
- *
- * Extend this object into your markup.
- *
- * --------------------------------------------------------------------- */
+
 .stats-tabs {
   padding: 0;
   margin: 3rem 0;
