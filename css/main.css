@@ -13,7 +13,7 @@ html {
 html,
 body {
   height: 100%;  /* prevent horizontal scrolling */
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 body {
